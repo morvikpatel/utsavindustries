@@ -229,9 +229,11 @@ img {
     font-size: 90%;
   }
 
-  .carousel img {
-    height: auto;
-  }
+ .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Prevents cutting */
+}
 
   iframe {
     width: 100%;
@@ -636,6 +638,7 @@ img {
       window.location.href = mailto;
       document.getElementById('formStatus').textContent='Opening your mail client to send the enquiry...';
     }
+
 
 
 
